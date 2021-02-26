@@ -14,7 +14,7 @@ function SignupScreen() {
         ).then((authUser) => {
             console.log(authUser)
         }).catch((error) => {
-            alert(error)
+            alert(error);
         });
     }
 
