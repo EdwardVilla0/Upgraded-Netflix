@@ -10,13 +10,13 @@ function Row({ title, fetchUrl, isLargeRow }) {
     const [movies, setMovies] = useState([]);
     const [trailerUrl, setTrailerUrl] = useState("");
 
-    const opts = {
-        height: "390",
-        width: "100%",
-        playerVars: {
-            autoplay: 1,
-        },
-    };
+    // const opts = {
+    //     height: "390",
+    //     width: "100%",
+    //     playerVars: {
+    //         autoplay: 1,
+    //     },
+    // };
 
     useEffect(() => {
         async function fetchData() {
