@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from '../../features/userSlice.js';
 import { auth } from '../../firebase.js';
 import Nav from '../Nav/Nav.component.js';
+import PlansScreen from '../PlansScreen/PlansScreen.component.js';
 import './ProfileScreen.styles.css';
 
 const ProfileScreen = () => {
@@ -23,7 +24,8 @@ const ProfileScreen = () => {
 
                         <div className="profileScreen__plans">
                             <h3>Plans</h3>
-                            <p>Renewal date: 29/09/2021</p>
+                            <PlansScreen />
+                            <p>Renewal date: 08/01/2021</p>
                             <button>Subcribe</button>
                             <h4>Netflix standard <span>1080p</span></h4>
 
