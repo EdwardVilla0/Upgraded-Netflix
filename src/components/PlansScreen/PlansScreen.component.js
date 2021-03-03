@@ -1,3 +1,4 @@
+import { loadStripe } from '@stripe/stripe-js';
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { selectUser } from '../../features/userSlice';
@@ -43,7 +44,11 @@ function PlansScreen() {
             const { error, sessionId } = snap.data();
 
             if (error) {
-                alert('an error has occured: ${error.message}')
+                alert(`an error has occured: ${error.message}`)
+            }
+
+            if (sessionId) {
+                const stripe = await loadStripe()
             }
         })
     };
