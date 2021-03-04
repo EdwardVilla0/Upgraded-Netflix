@@ -103,7 +103,7 @@ function PlansScreen() {
                             !isCurrentPackage && loadCheckout(productData.prices.priceId)
                         }
                         >
-                            {isCurrentPackage ? 'Current' : 'Subscribe'}
+                            {isCurrentPackage ? 'Current Package' : 'Subscribe'}
                         </button>
                     </div>
                 )
