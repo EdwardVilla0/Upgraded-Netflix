@@ -96,7 +96,7 @@ function PlansScreen() {
                     >
                         <div className="plansScreen__info">
                             <h5>{productData.name}</h5>
-                            <h6>{productData.description}</h6>
+                            <h5>{productData.description}</h5>
                         </div>
 
                         <button onClick={() =>
